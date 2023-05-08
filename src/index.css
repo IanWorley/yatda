@@ -7,3 +7,10 @@ body{
 padding: 0;
 
 }
+
+
+.btn{
+    @apply  focus:ring-2 rounded-full;
+
+
+}
