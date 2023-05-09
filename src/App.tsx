@@ -61,11 +61,11 @@ function App() {
         {todoList.map((todo) => (
           <div
             key={todo.id}
-            className="bg-slate-100 p-4 justify-between flex flex-1 shrink-0 "
+            className="bg-slate-100 p-4 justify-between flex  "
           >
-            <p className="p-4"> {todo.text} </p>
+            <p className="p-4 overflow-hidden text-ellipsis  "> {todo.text} </p>
             <button
-              className="bg-red-400 rounded  p-4 text-white btn ring-opacity-20 hover:bg-red-500 ring-red-300 focus:shadow  focus:ring-2 justify-end "
+              className="bg-red-400 rounded  p-4 text-white btn ring-opacity-20 md:shrink-0  hover:bg-red-500 ring-red-300 focus:shadow  focus:ring-2 justify-end "
               onClick={() => handleDelateTodo(todo.id)}
             >
               remove
